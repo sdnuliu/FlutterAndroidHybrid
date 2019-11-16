@@ -1,0 +1,7 @@
+include ':app'
+rootProject.name='Demo'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(                                                      // new
+        settingsDir.parentFile,                                                // new
+        'flutter_module/.android/include_flutter.groovy'// new
+))
